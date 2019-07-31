@@ -1,6 +1,8 @@
 <?php
+define('filePath', 'one_Dir_Arr.json');
 include 'function.php';
 $maxArray = [];
+
 
 $array = [
     [6, 5, 4, 9, 8, 3, 2],
@@ -16,5 +18,6 @@ for ($i = 0; $i < count($array); $i++):
 endfor;
 echo '<br>';
 $maxValue = maxValue($array);
-echo '<br> Max value is: '.$maxValue;
-findIndexValue($maxValue,$array);
+echo '<br> Max value is: ' . $maxValue;
+findIndexValue($maxValue, $array);
+
